@@ -1,0 +1,30 @@
+{
+  "name": "reachinbox-email-scheduler-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-grade email scheduler service and dashboard inspired by ReachInbox.ai",
+  "scripts": {
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:worker": "npm --prefix backend run worker",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test:backend": "npm --prefix backend run test"
+  },
+  "keywords": [
+    "reachinbox",
+    "email-scheduler",
+    "bullmq",
+    "redis",
+    "postgresql",
+    "prisma",
+    "elasticsearch",
+    "slack-api",
+    "react",
+    "vite",
+    "tailwind"
+  ],
+  "author": "Outbox Labs Assignment",
+  "license": "MIT"
+}
